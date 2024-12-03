@@ -1,0 +1,9 @@
+.mobile-text {
+  text-align: right !important;
+}
+
+@media (max-device-width: 600px) {
+  .mobile-text {
+    text-align: center !important;
+  }
+}
