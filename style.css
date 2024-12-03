@@ -1,5 +1,5 @@
 .mobile-text {
-  text-align: right !important;
+  text-align: left !important;
 }
 
 @media (max-device-width: 600px) {
