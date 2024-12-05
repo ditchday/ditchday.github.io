@@ -7,8 +7,6 @@ var hint2 = 'Hint: Have you tried highlighting everything?';
 var hint3 = 'Hint: Bro its just hidden text, whatever its bike rack go to the bike rack';
 
 let date = new Date();
-let timezoneOffset = date.getTimezoneOffset();
-let pstOffset = -480;
 
 
 var helpCounter = 0;
@@ -29,7 +27,7 @@ function typeWriter() {
 function help() {
   now = Date.now();
   if (helpCounter == 0) {
-    timetilnexthint = new Date('2024-12-05T08:05:00'+ (pstOffset + timezoneOffset) * 60 * 1000) - now;
+    timetilnexthint = new Date('2024-12-05T08:05:00') - now;
     if (timetilnexthint < 0) {
       document.getElementById("test").innerHTML = txt + '<br><span class="hid">bike rack</span><span aria-hidden="true"></span><br><button onclick="help();">Hint</button><br>'+hint1+"<br>Punishment: Put on the sunglasses behind the wallboard and keep them on for the whole stack";
       helpCounter++;
@@ -39,7 +37,7 @@ function help() {
     }
   }
   else if (helpCounter == 1) {
-    timetilnexthint = new Date('2024-12-05T08:06:00'+ (pstOffset + timezoneOffset) * 60 * 1000) - now;
+    timetilnexthint = new Date('2024-12-05T08:06:00') - now;
     if (timetilnexthint < 0) {
       document.getElementById("test").innerHTML = txt + '<br><span class="hid">bike rack</span><span aria-hidden="true"></span><br><button onclick="help();">Hint</button><br>'+hint2+"<br>Punishment: Use the highlighter and highlight yourself. Go wild.";
       helpCounter++;
@@ -49,7 +47,7 @@ function help() {
     }
   }
   else if (helpCounter == 2) {
-    timetilnexthint = new Date('2024-12-05T08:07:00'+ (pstOffset + timezoneOffset) * 60 * 1000) - now;
+    timetilnexthint = new Date('2024-12-05T08:07:00') - now;
     if (timetilnexthint < 0) {
       document.getElementById("test").innerHTML = txt + '<br><span class="hid">bike rack</span><span aria-hidden="true"></span><br><button onclick="help();">Hint</button><br>'+hint3+"<br>Punishment: You make me sad. Everyone send the sad emoji in spam";
       helpCounter++;
@@ -67,7 +65,7 @@ function tooearly() {
   }
 }
 now = Date.now();
-var timetobegin = new Date('2024-12-05T08:00:00'+ (pstOffset + timezoneOffset) * 60 * 1000) - now;
+var timetobegin = new Date('2024-12-05T08:00:00') - now;
 if (timetobegin < 0) {
   typeWriter();
 }
