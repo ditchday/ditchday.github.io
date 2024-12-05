@@ -54,11 +54,11 @@ function help() {
   }
 }
 now = Date.now();
-var timetobegin = new Date('2024-12-05T08:35:00'+(pstOffset + timezoneOffset) * 60 * 1000) - now;
+var timetobegin = new Date('2024-12-05T08:35:00') - now;
 var stallcount = 0;
 function stallloop() {
   now = Date.now();
-  timetobegin = new Date('2024-12-05T08:35:00'+(pstOffset + timezoneOffset) * 60 * 1000) - now;
+  timetobegin = new Date('2024-12-05T08:35:00') - now;
   if (timetobegin < 0) {
     typeWriter();
   }
