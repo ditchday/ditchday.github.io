@@ -6,8 +6,7 @@ var hint1 = 'Hint: Top right is lame, I prefer bottom left';
 var hint2 = 'Hint: Where have you seen bits';
 var hint3 = 'Hint: Go to the wallboard. See the bits? Read it starting from the bottom left and use the converter.';
 
-let timezoneOffset = Date.getTimezoneOffset();
-let pstOffset = -480;
+
 var helpCounter = 0;
 var input;
 var aaa;
@@ -98,7 +97,7 @@ function stall() {
   if (i < txt.length) {
     document.getElementById("test").innerHTML = stl.substring(0, i+1) +'<span aria-hidden="true"></span>';
     i++;
-    setTimeout(typeWriter, speed);
+    setTimeout(stall, speed);
   }
   else {
     document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><input type="text" id="code">';
