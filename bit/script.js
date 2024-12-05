@@ -62,7 +62,7 @@ function stallloop() {
     typeWriter();
   }
   else {
-    cod = document.getElementById("input").value;
+    cod = document.getElementById("code").value;
     if (stallcount == 0) {
       if (cod == 'fancy') {
         stallcount++;
