@@ -2,6 +2,11 @@ body {
   background-color:black;
 }
 
+image {
+  max-width: 100%;
+  height: auto;
+}
+
 h1 {
   background-color: black;
   background-image: radial-gradient(
