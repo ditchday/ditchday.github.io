@@ -6,7 +6,7 @@ var hint1 = 'Hint: Top right is lame, I prefer bottom left';
 var hint2 = 'Hint: Where have you seen bits';
 var hint3 = 'Hint: Go to the wallboard. See the bits? Read it starting from the bottom left and use the converter.';
 
-let timezoneOffset = date.getTimezoneOffset();
+let timezoneOffset = Date.getTimezoneOffset();
 let pstOffset = -480;
 var helpCounter = 0;
 var input;

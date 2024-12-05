@@ -5,7 +5,7 @@ var speed = 50; /* The speed/duration of the effect in milliseconds */
 var hint1 = 'Hint: See what is unseen';
 var hint2 = 'Hint: Have you tried highlighting everything?';
 var hint3 = 'Hint: Bro its just hidden text, whatever its bike rack go to the bike rack';
-let timezoneOffset = date.getTimezoneOffset();
+let timezoneOffset = Date.getTimezoneOffset();
 let pstOffset = -480;
 
 
