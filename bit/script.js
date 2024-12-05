@@ -51,19 +51,52 @@ function help() {
     helpCounter++;
   }
 }
-
-function stall() {
-  function typeWriter() {
-    if (i < txt.length) {
-      document.getElementById("test").innerHTML = txt.substring(0, i+1) +'<span aria-hidden="true"></span>';
-      i++;
-      setTimeout(typeWriter, speed);
+var stallcount = 0;
+function stallloop() {
+  cod = document.getElementById("input").value;
+  if (stallcount == 0) {
+    if (cod == 'fancy') {
+      stallcount++;
+      stallloop();
     }
     else {
-      document.getElementById("test").innerHTML = txt + '<br><input type="text" id="input" required minlength="5" maxlength="5"><span id="output"></span><br><button onclick="convert();">&#x202e;Convert</button><br><button onclick="help();">Hint</button>'
+      document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><img src="image0.jpg" alt="Im sorry">'
     }
   }
+  else if (stallcount == 1) {
+    if (cod == 'great') {
+      stallcount++;
+      stallloop();
+    }
+    else {
+      document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><img src="image1.jpg" alt="Im sorry">'
+    }
+  }
+  else if (stallcount == 2) {
+    if (cod == 'amazing') {
+      stallcount++;
+      stallloop();
+    }
+    else {
+      document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><img src="image1.jpg" alt="Im sorry">'
+    }
+  }
+
 }
+function stall() {
+  if (i < txt.length) {
+    document.getElementById("test").innerHTML = stl.substring(0, i+1) +'<span aria-hidden="true"></span>';
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+  else {
+    document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><input type="text" id="code">';
+    stallloop();
+    }
+}
+
+
+
 var timetobegin = new Date('2024-12-05T08:35:00') - now;
 if (timetobegin < 0) {
   typeWriter();
