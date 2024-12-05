@@ -87,7 +87,7 @@ function stallloop() {
         typeWriter();
       }
       else {
-        document.getElementById("test").innerHTML = stl +'<br><input type="text" id="code"><br><button onclick="stallloop();">Submit</button><br><img src="imagew.jpg" alt="Im sorry"><span aria-hidden="true"></span>'
+        document.getElementById("test").innerHTML = stl +'<br><input type="text" id="code"><br><button onclick="stallloop();">Submit</button><br><img src="image2.jpg" alt="Im sorry"><span aria-hidden="true"></span>'
       }
     }
   }
