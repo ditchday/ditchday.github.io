@@ -16,7 +16,7 @@ function typeWriter() {
 }
 function help() {
   now = new Date();
-  timetilnexthint = new Date(2024, 12, 5, 23, 15, 0, 0) - now;
+  timetilnexthint = new Date(2024, 12, 5, 23, 30, 0, 0) - now;
   if (timetilnexthint > 0) {
     document.getElementById("hint").innerHTML = 'Now'; 
   }
