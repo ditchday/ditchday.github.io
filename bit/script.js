@@ -69,7 +69,7 @@ function stallloop() {
         stallloop();
       }
       else {
-        document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><button onclick="stallloop();">Submit</button><br><img src="image0.jpg" alt="Im sorry">'
+        document.getElementById("test").innerHTML = stl +'<br><input type="text" id="code"><br><button onclick="stallloop();">Submit</button><br><img src="image0.jpg" alt="Im sorry"><span aria-hidden="true"></span>'
       }
     }
     else if (stallcount == 1) {
@@ -78,23 +78,23 @@ function stallloop() {
         stallloop();
       }
       else {
-        document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><button onclick="stallloop();">Hint</button><br><img src="image1.jpg" alt="Im sorry">'
+        document.getElementById("test").innerHTML = stl +'<br><input type="text" id="code"><br><button onclick="stallloop();">Submit</button><br><img src="image1.jpg" alt="Im sorry"><span aria-hidden="true"></span>'
       }
     }
     else if (stallcount == 2) {
       if (cod == 'amazing') {
         stallcount++;
-        stallloop();
+        typeWriter();
       }
       else {
-        document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><button onclick="stallloop();">Hint</button><br><img src="image1.jpg" alt="Im sorry">'
+        document.getElementById("test").innerHTML = stl +'<br><input type="text" id="code"><br><button onclick="stallloop();">Submit</button><br><img src="imagew.jpg" alt="Im sorry"><span aria-hidden="true"></span>'
       }
     }
   }
 
 }
 function stall() {
-  if (i < txt.length) {
+  if (i < stl.length) {
     document.getElementById("test").innerHTML = stl.substring(0, i+1) +'<span aria-hidden="true"></span>';
     i++;
     setTimeout(stall, speed);
