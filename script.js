@@ -19,9 +19,8 @@ function typeWriter() {
 }
 function help() {
   now = new Date();
-  timetilnexthint = new Date(2024, 12, 6, 0, 20, 0, 0) - now;
-  if (timetilnexthint > 0) {
-    document.getElementById("hint").innerHTML = 'Now'; 
-  }
+  timetilnexthint = new Date(2024, 12, 5, 0, 40, 0, 0) - now;
+  document.getElementById("hint").innerHTML = timetilnexthint; 
+
 }
 typeWriter();
