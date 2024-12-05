@@ -69,7 +69,7 @@ function stallloop() {
         stallloop();
       }
       else {
-        document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><img src="image0.jpg" alt="Im sorry">'
+        document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><button onclick="stallloop();">Submit</button><br><img src="image0.jpg" alt="Im sorry">'
       }
     }
     else if (stallcount == 1) {
@@ -78,7 +78,7 @@ function stallloop() {
         stallloop();
       }
       else {
-        document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><img src="image1.jpg" alt="Im sorry">'
+        document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><button onclick="stallloop();">Hint</button><br><img src="image1.jpg" alt="Im sorry">'
       }
     }
     else if (stallcount == 2) {
@@ -87,7 +87,7 @@ function stallloop() {
         stallloop();
       }
       else {
-        document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><img src="image1.jpg" alt="Im sorry">'
+        document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><button onclick="stallloop();">Hint</button><br><img src="image1.jpg" alt="Im sorry">'
       }
     }
   }
