@@ -61,7 +61,7 @@ function tooearly() {
   if (i < txt.length) {
     document.getElementById("test").innerHTML = early.substring(0, i+1) +'<span aria-hidden="true"></span>';
     i++;
-    setTimeout(typeWriter, speed);
+    setTimeout(tooearly, speed);
   }
 }
 now = Date.now();
