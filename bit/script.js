@@ -6,6 +6,8 @@ var hint1 = 'Hint: Top right is lame, I prefer bottom left';
 var hint2 = 'Hint: Where have you seen bits';
 var hint3 = 'Hint: Go to the wallboard. See the bits? Read it starting from the bottom left and use the converter.';
 
+let timezoneOffset = date.getTimezoneOffset();
+let pstOffset = -480;
 var helpCounter = 0;
 var input;
 var aaa;
@@ -52,11 +54,11 @@ function help() {
   }
 }
 now = Date.now();
-var timetobegin = new Date('2024-12-05T08:35:00') - now;
+var timetobegin = new Date('2024-12-05T08:35:00'+(pstOffset + timezoneOffset) * 60 * 1000) - now;
 var stallcount = 0;
 function stallloop() {
   now = Date.now();
-  timetobegin = new Date('2024-12-05T08:35:00') - now;
+  timetobegin = new Date('2024-12-05T08:35:00'+(pstOffset + timezoneOffset) * 60 * 1000) - now;
   if (timetobegin < 0) {
     typeWriter();
   }
