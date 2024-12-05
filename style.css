@@ -31,6 +31,12 @@ h1 {
     pointer-events: none;
   }
 }
+.hid {
+  opacity: 0;
+}
+.hid:hover {
+  opacity: 1 !important;
+}
 ::selection {
   background: #0080FF;
   text-shadow: none;
@@ -45,5 +51,6 @@ pre {
 @media (max-device-width: 600px) {
   .mobile-text {
     text-align: center !important;
+    vertical-align: center !important;
   }
 }

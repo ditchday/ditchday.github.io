@@ -1,6 +1,5 @@
 var i = 0;
 var txt = 'Who are you, what are you, why are you'; /* The text */
-var clue = 'bike rack'
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 var helpCounter = 0;
@@ -15,7 +14,7 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
   else {
-    document.getElementById("test").innerHTML = txt + '<br><span style="color: transparent;">'+hint+'</span><span aria-hidden="true"></span><br><button onclick="help();">Hint</button>'
+    document.getElementById("test").innerHTML = txt + '<br><span class="hid">bike rack</span><span aria-hidden="true"></span><br><button onclick="help();">Hint</button>'
   }
 }
 function help() {
