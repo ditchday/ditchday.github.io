@@ -9,7 +9,7 @@ var hint3 = 'Hint: Go to the wallboard. See the bits? Read it starting from the 
 var helpCounter = 0;
 var input;
 var aaa;
-
+var cod;
 var now;
 
 
@@ -51,34 +51,43 @@ function help() {
     helpCounter++;
   }
 }
+now = Date.now();
+var timetobegin = new Date('2024-12-05T08:35:00') - now;
 var stallcount = 0;
 function stallloop() {
-  cod = document.getElementById("input").value;
-  if (stallcount == 0) {
-    if (cod == 'fancy') {
-      stallcount++;
-      stallloop();
-    }
-    else {
-      document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><img src="image0.jpg" alt="Im sorry">'
-    }
+  now = Date.now();
+  timetobegin = new Date('2024-12-05T08:35:00') - now;
+  if (timetobegin < 0) {
+    typeWriter();
   }
-  else if (stallcount == 1) {
-    if (cod == 'great') {
-      stallcount++;
-      stallloop();
+  else {
+    cod = document.getElementById("input").value;
+    if (stallcount == 0) {
+      if (cod == 'fancy') {
+        stallcount++;
+        stallloop();
+      }
+      else {
+        document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><img src="image0.jpg" alt="Im sorry">'
+      }
     }
-    else {
-      document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><img src="image1.jpg" alt="Im sorry">'
+    else if (stallcount == 1) {
+      if (cod == 'great') {
+        stallcount++;
+        stallloop();
+      }
+      else {
+        document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><img src="image1.jpg" alt="Im sorry">'
+      }
     }
-  }
-  else if (stallcount == 2) {
-    if (cod == 'amazing') {
-      stallcount++;
-      stallloop();
-    }
-    else {
-      document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><img src="image1.jpg" alt="Im sorry">'
+    else if (stallcount == 2) {
+      if (cod == 'amazing') {
+        stallcount++;
+        stallloop();
+      }
+      else {
+        document.getElementById("test").innerHTML = stl +'<span aria-hidden="true"></span><br><input type="text" id="code"><br><img src="image1.jpg" alt="Im sorry">'
+      }
     }
   }
 
@@ -97,7 +106,6 @@ function stall() {
 
 
 
-var timetobegin = new Date('2024-12-05T08:35:00') - now;
 if (timetobegin < 0) {
   typeWriter();
 }
