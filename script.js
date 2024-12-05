@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'Welcome to the internet! Everything you need is here, you just need where to look. If you are truly confused, we got you... for a price'; /* The text */
+var txt = 'Welcome to the internet! Everything you need is here, you just need to know where to look. If you are truly confused, we got you... for a price'; /* The text */
 var early = 'You are too early, come back at 8'
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 var hint1 = 'Hint: See what is unseen';
