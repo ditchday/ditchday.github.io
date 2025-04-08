@@ -1,1 +1,1 @@
-Listen you punks, to make the repo prive I would have to pay for github, and you know I ain't doin that. Pretend this repo doesn't exist unless everything has passed.
+Listen you punks, to make the repo private I would have to pay for github, and you know I ain't doin that. Pretend this repo doesn't exist unless everything has passed.
