@@ -1,8 +1,12 @@
 body {
   background-image: url("woohoo.gif");
   text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
-img.animated-gif{
+img{
   width: 120px;
   height: auto;
 }
