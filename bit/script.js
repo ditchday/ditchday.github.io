@@ -1,8 +1,8 @@
-var i = 0;
-var txt = '&#x202e;Binary to letter encoder, put in 5 bits and try it out'; /* The text */
-var stl = 'As we know, the internet is huge, and thus nothing is original anymore. Might as well give into it. Recreate the following photo and send it in spam. We will give you a code if its good.'
+/* var i = 0;
+//var txt = '&#x202e;Binary to letter encoder, put in 5 bits and try it out'; /* The text */
+/*var stl = 'As we know, the internet is huge, and thus nothing is original anymore. Might as well give into it. Recreate the following photo and send it in spam. We will give you a code if its good.'
 var speed = 50; /* The speed/duration of the effect in milliseconds */
-var hint1 = 'Hint: Top right is lame, I prefer bottom left';
+/*var hint1 = 'Hint: Top right is lame, I prefer bottom left';
 var hint2 = 'Hint: Where have you seen bits';
 var hint3 = 'Hint: Go to the wallboard. See the bits? Read it starting from the bottom left and use the converter.';
 
@@ -90,6 +90,15 @@ function stallloop() {
         document.getElementById("test").innerHTML = stl +'<br><input type="text" id="code"><br><button onclick="stallloop();">Submit</button><br><img src="image2.jpg" alt="Im sorry"><span aria-hidden="true"></span>'
       }
     }
+    else if (stallcount == 3) {
+      if (cod == 'sweet') {
+        stallcount++;
+        typeWriter();
+      }
+      else {
+        document.getElementById("test").innerHTML = stl +'<br><input type="text" id="code"><br><button onclick="stallloop();">Submit</button><br><img src="image3.jpg" alt="Im sorry"><span aria-hidden="true"></span>'
+      }
+    }
   }
 
 }
@@ -113,3 +122,4 @@ if (timetobegin < 0) {
 else {
   stall();
 }
+*/
