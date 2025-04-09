@@ -1,4 +1,15 @@
 body {
-  background-image: url("woohoo.png");
+  background-image: url("woohoo.gif");
+  text-align: center;
+}
+img.animated-gif{
+  width: 120px;
+  height: auto;
 }
 
+#footer{
+  display: table;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
